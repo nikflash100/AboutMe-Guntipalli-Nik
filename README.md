@@ -1,6 +1,6 @@
 # About Me — Nik Guntipalli
 
-A single-page web application introducing me as a student and developer. Built for ICS 499, Assignment 1.
+A single-page web application introducing me as a student and developer. Built for Code For Good, Assignment 1.
 
 ## Running it
 
