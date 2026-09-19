@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nik Guntipalli — About Me</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,600;1,400&family=Work+Sans:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<nav class="topnav">
+  <span class="topnav-name">Nik Guntipalli</span>
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#courses">Courses</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#links">Links</a></li>
+  </ul>
+</nav>
+
+<header class="hero" id="about">
+  <h1>Nik Guntipalli</h1>
+  <p class="tagline"><span class="marked">I build education software that figures out what a student doesn't know yet.</span></p>
+  <p class="meta">Middle school student, Grade 7 &middot; Minnesota</p>
+</header>
+
+<main>
+
+<section class="section" id="summary">
+  <h2>Profile</h2>
+  <p>I'm a seventh-grade student in Minnesota and a developer working mostly in Python, machine learning, and the OpenAI API. Most of what I build points at the same problem: learning is slow when nobody can tell you which specific thing you're missing, so I write software that narrows that down.</p>
+  <p>I've shipped an adaptive diagnostic app, trained classifiers on student outcome data, and written a parser that turned three and a half thousand archived quizbowl questions into a practice engine. I hold three Python Institute certifications and study accelerated math through UMTYMP at the University of Minnesota.</p>
+  <p>Outside of code I compete in quizbowl, chess, and Destination Imagination, where my team won the Minnesota state championship in the Middle School Science Division in 2026. I'm aiming at a career in software engineering and machine learning, and everything on this page is a step toward it.</p>
+</section>
+
+<section class="section" id="courses">
+  <h2>Courses</h2>
+  <table>
+    <caption>Coursework and certification tracks completed so far</caption>
+    <thead>
+      <tr><th scope="col">Course</th><th scope="col">Provider</th><th scope="col">Focus</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>UMTYMP Accelerated Mathematics</td><td>University of Minnesota</td><td>Algebra and geometry on the accelerated track</td></tr>
+      <tr><td>Linear Algebra</td><td>Independent study</td><td>Vectors, matrices, transformations</td></tr>
+      <tr><td>Calculus</td><td>Independent study</td><td>Limits, derivatives, integrals</td></tr>
+      <tr><td>Statistics</td><td>Independent study</td><td>Distributions, inference, regression</td></tr>
+      <tr><td>Certified Entry-Level Python Programmer (PCEP)</td><td>Python Institute</td><td>Core syntax, control flow, data types</td></tr>
+      <tr><td>Certified Associate Python Programmer (PCAP)</td><td>Python Institute</td><td>Functions, modules, OOP, exceptions</td></tr>
+      <tr><td>Certified Associate Data Analyst with Python (PCAD)</td><td>Python Institute</td><td>Data analysis, pandas, visualization</td></tr>
+      <tr><td>Web Development</td><td>Independent study</td><td>HTML, CSS, JavaScript, deployment</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<section class="section" id="skills">
+  <h2>Technical Skills</h2>
+  <dl class="skills">
+    <dt>Programming languages</dt>
+    <dd>Python, JavaScript, HTML, CSS</dd>
+
+    <dt>Machine learning</dt>
+    <dd>scikit-learn, pandas, matplotlib, Hugging Face, Gradio</dd>
+
+    <dt>Tools and platforms</dt>
+    <dd>Git, GitHub, VS Code, OpenAI API, Thunkable, Vercel, Bambu Studio</dd>
+
+    <dt>AI tools</dt>
+    <dd>Claude, ChatGPT, GitHub Copilot</dd>
+
+    <dt>Mathematics</dt>
+    <dd>Linear algebra, calculus, statistics</dd>
+  </dl>
+</section>
+
+<section class="section" id="projects">
+  <h2>Projects</h2>
+
+  <article class="project">
+    <h3>Signal</h3>
+    <p class="project-sub">K&ndash;12 adaptive diagnostic learning app</p>
+    <p>Signal finds the one topic a student is weakest in. It opens with a 16-question breadth screen, then runs a staircase algorithm and a re-check cycle to narrow the result, coordinating five separate model calls along the way. I built it to survive bad conditions: a 40-question offline fallback bank, state that persists through a force-close, streak tracking, and grade-band routing.</p>
+    <p class="tech">Thunkable &middot; OpenAI gpt-4o-mini &middot; Presented at the Spark Civics Civic Innovation Showcase</p>
+  </article>
+
+  <article class="project">
+    <h3>SuccessForecast</h3>
+    <p class="project-sub">Machine-learning student outcome predictor</p>
+    <p>A logistic regression classifier trained to predict pass/fail outcomes, reaching 85.6% accuracy and 0.92 ROC-AUC. I also applied K-Means clustering to the performance data to surface distinct student archetypes, and presented the results at demo day with a full notebook and an eleven-slide deck.</p>
+    <p class="tech">Python &middot; scikit-learn &middot; pandas &middot; matplotlib</p>
+  </article>
+
+  <article class="project">
+    <h3>Buzzer Station</h3>
+    <p class="project-sub">Quizbowl practice web app</p>
+    <p>I wrote a parser that structured 3,531 questions from public packet archives &mdash; 1,885 tossups and 1,646 bonuses &mdash; into a usable question bank. On top of it sits a practice engine with word-by-word delivery, power markers, spacebar buzz-in, automatic answer grading, per-category scoring, and a mode that drills the questions you missed.</p>
+    <p class="tech">HTML &middot; CSS &middot; JavaScript</p>
+  </article>
+
+  <article class="project">
+    <h3>Additional work</h3>
+    <p class="project-sub">Smaller experiments and deployments</p>
+    <p>Machine-learning apps deployed with Hugging Face and Gradio, plus gradient descent visualizers, Monte Carlo simulations, and assorted data analysis projects in Python.</p>
+    <p class="tech">Python &middot; Hugging Face &middot; Gradio &middot; NumPy</p>
+  </article>
+</section>
+
+<section class="section" id="links">
+  <h2>Links</h2>
+  <ul class="links">
+    <li><a href="https://github.com/nikflash100">github.com/nikflash100</a></li>
+  </ul>
+</section>
+
+</main>
+
+<footer>
+  <p>Built with HTML and CSS. Last updated September 2026.</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,218 @@
+:root {
+  --ink: #16212e;
+  --paper: #f7f8f5;
+  --rule: #d2dade;
+  --muted: #5b6b78;
+  --mark: #f6d34a;
+  --link: #216179;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: Spectral, Georgia, serif;
+  font-size: 18px;
+  line-height: 1.65;
+}
+
+main, .hero, .topnav, footer {
+  max-width: 44rem;
+  margin: 0 auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.topnav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 1rem 2rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.topnav-name {
+  font-family: "Work Sans", system-ui, sans-serif;
+  font-weight: 700;
+  font-size: 0.95rem;
+  letter-spacing: 0.01em;
+}
+
+.topnav ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.topnav a {
+  font-family: "Work Sans", system-ui, sans-serif;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--muted);
+  text-decoration: none;
+}
+
+.topnav a:hover { color: var(--ink); }
+
+.hero {
+  padding-top: 3rem;
+  padding-bottom: 3.5rem;
+}
+
+h1 {
+  font-family: "Work Sans", system-ui, sans-serif;
+  font-weight: 700;
+  font-size: clamp(2.6rem, 8vw, 4.25rem);
+  line-height: 1.02;
+  letter-spacing: -0.03em;
+  margin: 0 0 1.5rem;
+}
+
+.tagline {
+  font-size: clamp(1.15rem, 3vw, 1.5rem);
+  line-height: 1.45;
+  margin: 0 0 1.25rem;
+  max-width: 30ch;
+}
+
+.marked {
+  background: linear-gradient(transparent 58%, var(--mark) 58%);
+  padding: 0 0.12em;
+}
+
+.meta {
+  font-family: "Work Sans", system-ui, sans-serif;
+  font-size: 0.9rem;
+  color: var(--muted);
+  margin: 0;
+}
+
+.section {
+  padding-top: 2.75rem;
+  padding-bottom: 2.75rem;
+  border-top: 1px solid var(--rule);
+}
+
+h2 {
+  font-family: "Work Sans", system-ui, sans-serif;
+  font-weight: 700;
+  font-size: 1.1rem;
+  letter-spacing: -0.01em;
+  margin: 0 0 1.5rem;
+}
+
+p { margin: 0 0 1.1rem; }
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+
+caption {
+  text-align: left;
+  font-family: "Work Sans", system-ui, sans-serif;
+  font-size: 0.85rem;
+  color: var(--muted);
+  padding-bottom: 0.9rem;
+}
+
+th, td {
+  text-align: left;
+  padding: 0.7rem 0.9rem 0.7rem 0;
+  border-bottom: 1px solid var(--rule);
+  vertical-align: top;
+}
+
+th {
+  font-family: "Work Sans", system-ui, sans-serif;
+  font-weight: 500;
+  font-size: 0.8rem;
+  color: var(--muted);
+  border-bottom-color: var(--ink);
+}
+
+td:last-child { color: var(--muted); padding-right: 0; }
+
+.skills {
+  margin: 0;
+  display: grid;
+  grid-template-columns: 12rem 1fr;
+  gap: 0.35rem 1.5rem;
+}
+
+.skills dt {
+  font-family: "Work Sans", system-ui, sans-serif;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--muted);
+  padding-top: 0.15rem;
+}
+
+.skills dd { margin: 0 0 0.6rem; }
+
+.project { margin-bottom: 2.5rem; }
+.project:last-child { margin-bottom: 0; }
+
+h3 {
+  font-family: "Work Sans", system-ui, sans-serif;
+  font-weight: 700;
+  font-size: 1.3rem;
+  margin: 0 0 0.2rem;
+}
+
+.project-sub {
+  font-size: 1rem;
+  font-style: italic;
+  color: var(--muted);
+  margin: 0 0 0.9rem;
+}
+
+.tech {
+  font-family: "Work Sans", system-ui, sans-serif;
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin: 0;
+}
+
+.links { margin: 0; padding: 0; list-style: none; }
+.links li { margin-bottom: 0.5rem; }
+
+a { color: var(--link); }
+
+a:focus-visible, .topnav a:focus-visible {
+  outline: 2px solid var(--link);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+footer {
+  border-top: 1px solid var(--rule);
+  padding-top: 1.75rem;
+  padding-bottom: 3.5rem;
+  font-family: "Work Sans", system-ui, sans-serif;
+  font-size: 0.82rem;
+  color: var(--muted);
+}
+
+footer p { margin: 0; }
+
+@media (max-width: 600px) {
+  body { font-size: 17px; }
+  .skills { grid-template-columns: 1fr; gap: 0; }
+  .skills dt { padding-top: 0.5rem; }
+  table { font-size: 0.9rem; }
+  th, td { padding-right: 0.5rem; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}
