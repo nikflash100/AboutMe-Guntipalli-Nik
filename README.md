@@ -1,10 +1,10 @@
-# About Me — Nik Guntipalli
+# Nik Guntipalli
 
-A single-page web application introducing me as a student and developer. Built for Code For Good, Assignment 1.
+My personal site. Live at https://about-me-guntipalli-nik.vercel.app
 
 ## Running it
 
-Open `index.html` in any browser. No server or build step required.
+Open `index.html` in a browser. No server, no build step.
 
 ## Structure
 
@@ -21,17 +21,16 @@ AboutMe_Guntipalli_Nik/
 
 ## Built with
 
-HTML5 and CSS. Typefaces are Work Sans and Spectral, loaded from Google Fonts. No frameworks or libraries.
+Plain HTML and CSS. Work Sans and Spectral from Google Fonts. No frameworks.
 
 ## Links
 
 - GitHub: https://github.com/nikflash100
-- Live site: (add your Vercel URL here after deploying)
 
 ## AI Usage
 
-I used Claude while completing this assignment.
+I used Claude on this site.
 
-I gave it my resume and asked it to draft the page structure and styling from that content. It produced the initial HTML and CSS, including the courses table and the layout for the projects section. I reviewed the markup, corrected details about my projects, adjusted the course list, and tested the page in a browser at both desktop and mobile widths before deploying.
+I gave it my resume and had it draft the structure and styling. It wrote the first version of the HTML and CSS, including the courses table and the projects layout. I went back through and rewrote most of the copy in my own words, fixed details about my projects that it got wrong or overstated, and tested the page at desktop and phone widths before deploying.
 
-Two specific examples: Claude suggested the grid layout used for the skills list, which collapses to a single column on narrow screens, and it flagged that the page needed visible keyboard focus styles for accessibility, which I kept.
+Two things it contributed that I kept: the grid used for the skills list, which collapses to one column on narrow screens, and visible keyboard focus styles for accessibility, which it flagged as missing.
