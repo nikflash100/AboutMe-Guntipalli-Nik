@@ -52,8 +52,17 @@
   <article class="project">
     <h3>SuccessForecast</h3>
     <p class="project-sub">Predicting student outcomes</p>
-    <p>A logistic regression model that predicts whether a student passes. 85.6% accuracy, 0.92 ROC-AUC. I ran K-Means on the same data and got a handful of clear student archetypes out of it, which I wasn't expecting. Presented it at demo day with the notebook and a slide deck.</p>
-    <p class="tech">Python &middot; scikit-learn &middot; pandas &middot; matplotlib</p>
+    <p>I compared 8 classifiers on a dataset of 2,392 students with 5-fold cross-validation, tuned the top three with grid search, and combined them into a soft-voting ensemble. A linear SVM came out ahead: 90.2% accuracy and 0.964 ROC-AUC on the test set.</p>
+    <p>The model wasn't the interesting part. Absences turned out to carry 62% of the predictive weight, more than study time, parental support, and parental education combined. I also ran K-Means on the same data and got four student archetypes with clearly different pass rates.</p>
+    <p class="tech">Python &middot; scikit-learn &middot; pandas &middot; matplotlib &middot; seaborn</p>
+  </article>
+
+  <article class="project">
+    <h3>From Failure to Flourishing</h3>
+    <p class="project-sub">Exploratory analysis of student performance</p>
+    <p>I went through the same student dataset question by question, sixteen of them, looking for what actually separates failing students from passing ones. Absences were the clearest split: failing students averaged 19, passing students 7.5.</p>
+    <p>Most of what people assume matters didn't. Extracurricular participation moved the failure rate by about five points. Gender and ethnicity barely moved it at all.</p>
+    <p class="tech">Python &middot; pandas &middot; matplotlib &middot; seaborn</p>
   </article>
 
   <article class="project">
@@ -104,10 +113,10 @@
     <dd>scikit-learn, pandas, matplotlib, Hugging Face, Gradio</dd>
 
     <dt>Tools</dt>
-    <dd>Git, GitHub, VS Code, OpenAI API, Thunkable, Vercel, Fusion 360, Bambu Studio</dd>
+    <dd>Git, GitHub, VS Code, Claude, OpenAI API, Thunkable, Vercel, Fusion 360, Bambu Studio</dd>
 
     <dt>AI tools</dt>
-    <dd>Claude, GitHub Copilot (minimal)</dd>
+    <dd>GitHub Copilot, minimal usage</dd>
   </dl>
 </section>
 
