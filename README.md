@@ -34,3 +34,4 @@ I used Claude on this site.
 I gave it my resume and had it draft the structure and styling. It wrote the first version of the HTML and CSS, including the courses table and the projects layout. I went back through and rewrote most of the copy in my own words, fixed details about my projects that it got wrong or overstated, and tested the page at desktop and phone widths before deploying.
 
 Two things it contributed that I kept: the grid used for the skills list, which collapses to one column on narrow screens, and visible keyboard focus styles for accessibility, which it flagged as missing.
+
